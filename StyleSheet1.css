@@ -18,7 +18,7 @@ body {
     padding: 0;
     height: 100%;
     width: 100%;
-    font-size: 22px;
+    font-size: 1.375rem;
     background-image: linear-gradient(to right, #f5f5dc, #ffe4c4); /* Gradient from beige to light cream */
     background-repeat: no-repeat;
     background-attachment: fixed; /* Ensures the background is fixed during scrolling */
@@ -32,7 +32,7 @@ body {
 /* Header styles */
 header {
     color: white;
-    padding: 20px;
+    padding: 1.25rem;
     text-align: left;
     position: fixed;
     top: 0;
@@ -44,11 +44,11 @@ header {
 }
 
 #profile-pic {
-    width: 125px;
-    height: 125px;
+    width: 7.813rem;
+    height: 7.813rem;
     border-radius: 50%;
     object-fit: contain;
-    margin-right: 20px;
+    margin-right: 1.25rem;
 }
 
 /* Navigation styles */
@@ -65,13 +65,13 @@ nav {
 
         nav ul li {
             display: inline;
-            margin-right: 20px;
+            margin-right:1.25rem;
         }
 
             nav ul li a {
                 color: white;
                 text-decoration: none;
-                padding: 10px;
+                padding: 0.625rem;
                 transition: color 0.3s ease, background-color 0.3s ease;
             }
 
@@ -83,13 +83,13 @@ nav {
 
 .slideshow-container {
     width: 100%; /* Full viewport width */
-    height: 800px; /* Fixed height */
+    height: 50rem; /* Fixed height */
     position: relative;
     display: flex;
     justify-content: center; /* Center images horizontally */
     align-items: center; /* Center images vertically */
     overflow: hidden; /* Hide anything outside this container */
-    margin-bottom: -150px; /* Reduced bottom margin to decrease space to the next section */
+    margin-bottom: -9.375rem; /* Reduced bottom margin to decrease space to the next section */
 }
 
 .slide-wrapper {
@@ -100,10 +100,10 @@ nav {
 }
 
     .slide-wrapper img {
-        width: 275px; /* Fixed width for each image */
+        width: 17.188rem; /* Fixed width for each image */
         height: auto; /* Auto height to maintain aspect ratio */
         object-fit: cover; /* Cover fit to avoid distortion */
-        margin: 0 15px; /* Space between images */
+        margin: 0 0.938rem; /* Space between images */
     }
 
 
@@ -113,7 +113,7 @@ nav {
 
 /* Main content styles */
 main {
-    padding-top: 180px; /* Adjusting for the header height */
+    padding-top: 11.25rem; /* Adjusting for the header height */
     width: 90%; /* Control the width of the main content area to not span the full page */
     margin: auto; /* Center the main content horizontally */
 }
@@ -123,9 +123,9 @@ main {
 .full-page {
     min-height: 75vh;
     width: 100%;
-    padding: 40px; /* Consistent padding for better spacing */
-    padding-top: 140px; /* Reduced padding-top as compared to previous */
-    margin-top: -100px; /* Negative margin adjusted to pull the section upwards */
+    padding: 2.5rem; /* Consistent padding for better spacing */
+    padding-top: 8.75rem; /* Reduced padding-top as compared to previous */
+    margin-top: -6.25rem; /* Negative margin adjusted to pull the section upwards */
     display: flex;
     flex-direction: column;
     align-items: center; /* Center alignment for better aesthetics */
@@ -134,36 +134,36 @@ main {
 
 /* Specific adjustment for the About Me section if needed */
 #about {
-    padding-top: -50px; /* Reduce this if the header is not very tall */
-    margin-top: -300px; /* Adjust based on actual header height */
+    padding-top: -3.125rem; /* Reduce this if the header is not very tall */
+    margin-top: -18.75rem; /* Adjust based on actual header height */
 }
 
 
     .full-page h2 {
         text-align: center; /* Center align all h2 headings */
         width: 100%; /* Ensure the headings are full width */
-        margin-bottom: 30px; /* Adds space below the heading */
-        font-size: 28px; /* Larger font size for section titles */
+        margin-bottom: 1.875rem; /* Adds space below the heading */
+        font-size: 1.75rem; /* Larger font size for section titles */
     }
 
 /* Specific adjustment for the Projects section */
 #projects {
-    margin-top: -140px; /* Adjust this value if the header is larger */
-    padding-top: 220px; /* Increased padding at the top to accommodate fixed header */
+    margin-top: -8.75rem; /* Adjust this value if the header is larger */
+    padding-top: 13.75rem; /* Increased padding at the top to accommodate fixed header */
 }
 
 .projects-container {
     text-align: center; /* Center-aligns the headers */
     width: 100%;
-    padding: 20px;
+    padding: 1.25rem;
     background-color: none; /* No specific background color for the section */
     color: #000; /* Sets text color */
 }
 
 .project {
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ccc; /* Subtle border */
+    margin: 1.25rem auto;
+    padding: 1.25rem;
+    border: 0.063rem solid #ccc; /* Subtle border */
     width: 80%; /* Adjust width as necessary */
     display: flex;
     align-items: center; /* Vertically centers the items within each project */
@@ -176,8 +176,8 @@ main {
 }
 
     .project-icon img {
-        width: 90px; /* Explicitly sets the width of the image to 80px */
-        height: 90px; /* Explicitly sets the height of the image to 80px */
+        width: 5.625rem; /* Explicitly sets the width of the image to 80px */
+        height: 5.625rem; /* Explicitly sets the height of the image to 80px */
         object-fit: contain; /* Ensures the image scales correctly within the dimensions */
     }
 
@@ -188,7 +188,7 @@ main {
 
 .source-code {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     background-color:#666; /* No background color */
     border: 1px solid #fff; /* White border */
     color: #fff;
@@ -203,12 +203,12 @@ main {
     }
 
 #resume img {
-    border: 1px solid #ccc; /* Adds a subtle border around the image */
+    border: 0.063rem solid #ccc; /* Adds a subtle border around the image */
     transition: transform 0.3s ease-in-out; /* Smooth transform effect on hover */
     cursor: pointer; /* Changes the cursor to indicate it's clickable */
     width: 100%; /* Ensures the image is responsive and fits the container */
-    max-width: 300px; /* Reduces the maximum width to 400px */
-    height: 300px; /* Maintains the aspect ratio of the image */
+    max-width: 18.75rem; /* Reduces the maximum width to 400px */
+    height: 18.75rem; /* Maintains the aspect ratio of the image */
 }
 
     #resume img:hover {
@@ -219,8 +219,8 @@ main {
 
 /* Additional specific adjustments for the 'experience' section if needed */
 #experience {
-    padding-top: 300px; /* Increase padding if the header is larger or for better visibility */
-    margin-top: -220px; /* Corresponding negative margin */
+    padding-top: 18.75rem; /* Increase padding if the header is larger or for better visibility */
+    margin-top: -13.75rem; /* Corresponding negative margin */
 }
 
 
@@ -232,27 +232,27 @@ main {
     justify-content: center; /* Centers content vertically if there is enough space */
     text-align: center; /* Ensures text and inline elements are centered */
     width: 100%; /* Takes full width to allow for centering within the parent */
-    padding: 100px; /* Optional: Adjust padding as needed for spacing */
+    padding: 6.25rem; /* Optional: Adjust padding as needed for spacing */
     min-height: 75vh; /* Ensures the section takes up sufficient vertical space */
 }
 
     #contact h2 {
-        margin-bottom: 20px; /* Space below the section heading */
-        font-size: 28px; /* Larger font size for visibility */
+        margin-bottom: 1.25rem; /* Space below the section heading */
+        font-size: 1.75rem; /* Larger font size for visibility */
     }
 
     #contact p, #contact a {
-        font-size: 18px; /* Ensures legibility */
-        margin-bottom: 10px; /* Spacing between contact elements */
+        font-size: 1.125rem; /* Ensures legibility */
+        margin-bottom: 0.625rem; /* Spacing between contact elements */
         color: #666; /* Styling for text color */
     }
 
     #contact a {
         color: #0056b3; /* Style for links to make them stand out */
         text-decoration: none; /* Optional: removes underline from links */
-        padding: 8px 16px; /* Padding for better touch interaction */
+        padding: 0.5rem 1rem; /* Padding for better touch interaction */
         background-color: none; /* Background color for links for visibility */
-        border-radius: 5px; /* Rounded corners for aesthetic appeal */
+        border-radius: 0.313rem; /* Rounded corners for aesthetic appeal */
         transition: background-color 0.3s ease; /* Smooth transition for hover effect */
     }
 
