@@ -16,7 +16,9 @@ html, body {
 body {
     margin: 0;
     padding: 0;
-    font-size: 1rem; /* Base font size */
+    height: 100%;
+    width: 100%;
+    font-size: 1.375rem; /* 22px to rem */
     background-image: linear-gradient(to right, #f5f5dc, #ffe4c4);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -25,9 +27,10 @@ body {
     font-family: 'Segoe UI', Arial, sans-serif;
 }
 
+/* Header styles */
 header {
     color: white;
-    padding: 1rem; /* Padding for desktop */
+    padding: 1.25rem; /* 20px to rem */
     text-align: left;
     position: fixed;
     top: 0;
@@ -39,13 +42,14 @@ header {
 }
 
 #profile-pic {
-    width: 5rem; /* Size for desktop */
-    height: 5rem;
+    width: 7.8125rem; /* 125px to rem */
+    height: 7.8125rem; /* 125px to rem */
     border-radius: 50%;
     object-fit: contain;
-    margin-right: 1rem; /* Margin for desktop */
+    margin-right: 1.25rem; /* 20px to rem */
 }
 
+/* Navigation styles */
 nav {
     margin-left: auto;
 }
@@ -58,14 +62,14 @@ nav ul {
 }
 
 nav ul li {
-    display: inline-block;
-    margin-right: 1rem; /* Margin for desktop */
+    display: inline;
+    margin-right: 1.25rem; /* 20px to rem */
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 0.5rem; /* Padding for desktop */
+    padding: 0.625rem; /* 10px to rem */
     transition: color 0.3s ease, background-color 0.3s ease;
 }
 
@@ -76,13 +80,13 @@ nav ul li a:hover {
 
 .slideshow-container {
     width: 100%;
-    height: 30rem; /* Height for desktop */
+    height: 50rem; /* 800px to rem */
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    margin-bottom: -6rem; /* Negative margin for desktop */
+    margin-bottom: -9.375rem; /* -150px to rem */
 }
 
 .slide-wrapper {
@@ -93,47 +97,60 @@ nav ul li a:hover {
 }
 
 .slide-wrapper img {
-    width: 15rem; /* Size for desktop */
+    width: 17.1875rem; /* 275px to rem */
     height: auto;
     object-fit: cover;
-    margin: 0 0.5rem; /* Margin for desktop */
+    margin: 0 0.9375rem; /* 15px to rem */
 }
 
+/* Main content styles */
 main {
-    padding-top: 8rem; /* Padding for desktop */
+    padding-top: 11.25rem; /* 180px to rem */
     width: 90%;
     margin: auto;
 }
 
 .full-page {
-    min-height: 50vh; /* Minimum height for desktop */
+    min-height: 75vh;
     width: 100%;
-    padding: 1.5rem; /* Padding for desktop */
-    padding-top: 6rem; /* Padding top for desktop */
-    margin-top: -4rem; /* Negative margin for desktop */
+    padding: 2.5rem; /* 40px to rem */
+    padding-top: 8.75rem; /* 140px to rem */
+    margin-top: -6.25rem; /* -100px to rem */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
+#about {
+    padding-top: -3.125rem; /* -50px to rem */
+    margin-top: -18.75rem; /* -300px to rem */
+}
+
 .full-page h2 {
     text-align: center;
     width: 100%;
-    margin-bottom: 1rem; /* Margin for desktop */
-    font-size: 1.5rem; /* Font size for desktop */
+    margin-bottom: 1.875rem; /* 30px to rem */
+    font-size: 1.75rem; /* 28px to rem */
+}
+
+#projects {
+    margin-top: -8.75rem; /* -140px to rem */
+    padding-top: 13.75rem; /* 220px to rem */
 }
 
 .projects-container {
     text-align: center;
     width: 100%;
-    padding: 1rem; /* Padding for desktop */
+    padding: 1.25rem; /* 20px to rem */
+    background-color: none;
+    color: #000;
 }
 
 .project {
-    margin: 1rem auto; /* Margin for desktop */
-    padding: 1rem; /* Padding for desktop */
-    border: 1px solid #ccc; /* Border for desktop */
+    margin: 1.25rem auto; /* 20px to rem */
+    padding: 1.25rem; /* 20px to rem */
+    border: 0.0625rem solid #ccc; /* 1px to rem */
     width: 80%;
     display: flex;
     align-items: center;
@@ -141,21 +158,26 @@ main {
 }
 
 .project-icon {
-    flex: 0 0 5rem; /* Size for desktop */
-    margin-right: 1rem; /* Margin for desktop */
+    flex: 0 0 5.625rem; /* 90px to rem */
+    margin-right: 1.25rem; /* 20px to rem */
 }
 
 .project-icon img {
-    width: 5rem; /* Size for desktop */
-    height: 5rem; /* Size for desktop */
+    width: 5.625rem; /* 90px to rem */
+    height: 5.625rem; /* 90px to rem */
     object-fit: contain;
+}
+
+.project-description {
+    flex: 1;
+    text-align: left;
 }
 
 .source-code {
     display: inline-block;
-    padding: 0.5rem 1rem; /* Padding for desktop */
+    padding: 0.625rem 1.25rem; /* 10px 20px to rem */
     background-color: #666;
-    border: 1px solid #fff; /* Border for desktop */
+    border: 0.0625rem solid #fff; /* 1px to rem */
     color: #fff;
     text-decoration: none;
     transition: background-color 0.5s, color 0.5s;
@@ -168,16 +190,21 @@ main {
 }
 
 #resume img {
-    border: 1px solid #ccc; /* Border for desktop */
+    border: 0.0625rem solid #ccc; /* 1px to rem */
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
     width: 100%;
-    max-width: 15rem; /* Max width for desktop */
-    height: 15rem; /* Height for desktop */
+    max-width: 18.75rem; /* 300px to rem */
+    height: 18.75rem; /* 300px to rem */
 }
 
 #resume img:hover {
     transform: scale(1.05);
+}
+
+#experience {
+    padding-top: 18.75rem; /* 300px to rem */
+    margin-top: -13.75rem; /* -220px to rem */
 }
 
 #contact {
@@ -187,26 +214,27 @@ main {
     justify-content: center;
     text-align: center;
     width: 100%;
-    padding: 2rem; /* Padding for desktop */
-    min-height: 50vh; /* Minimum height for desktop */
+    padding: 6.25rem; /* 100px to rem */
+    min-height: 75vh;
 }
 
 #contact h2 {
-    margin-bottom: 1rem; /* Margin for desktop */
-    font-size: 1.5rem; /* Font size for desktop */
+    margin-bottom: 1.25rem; /* 20px to rem */
+    font-size: 1.75rem; /* 28px to rem */
 }
 
 #contact p, #contact a {
-    font-size: 0.875rem; /* Font size for desktop */
-    margin-bottom: 0.5rem; /* Margin for desktop */
+    font-size: 1.125rem; /* 18px to rem */
+    margin-bottom: 0.625rem; /* 10px to rem */
     color: #666;
 }
 
 #contact a {
     color: #0056b3;
     text-decoration: none;
-    padding: 0.5rem 1rem; /* Padding for desktop */
-    border-radius: 0.3125rem; /* Border radius for desktop */
+    padding: 0.5rem 1rem; /* 8px 16px to rem */
+    background-color: none;
+    border-radius: 0.3125rem; /* 5px to rem */
     transition: background-color 0.3s ease;
 }
 
@@ -220,100 +248,4 @@ footer {
     text-align: center;
     padding: 1rem;
     width: 100%;
-}
-
-/* Media Queries for Smaller Screens */
-@media (max-width: 959px) {
-    header {
-        padding: 0.75rem; /* Reduced padding */
-    }
-
-    #profile-pic {
-        width: 4rem; /* Size for smaller screens */
-        height: 4rem;
-        margin-right: 0;
-    }
-
-    nav ul li {
-        margin-right: 0.75rem; /* Margin for smaller screens */
-    }
-
-    .slideshow-container {
-        height: 25rem; /* Height for smaller screens */
-        margin-bottom: -4rem; /* Negative margin for smaller screens */
-    }
-
-    .full-page {
-        padding: 1rem; /* Padding for smaller screens */
-        padding-top: 4rem; /* Padding top for smaller screens */
-        margin-top: -3rem; /* Negative margin for smaller screens */
-    }
-
-    .project-icon {
-        flex: 0 0 4rem; /* Size for smaller screens */
-        margin-right: 0.75rem; /* Margin for smaller screens */
-    }
-
-    .project-icon img {
-        width: 4rem; /* Size for smaller screens */
-        height: 4rem; /* Size for smaller screens */
-    }
-
-    #resume img {
-        max-width: 12rem; /* Max width for smaller screens */
-        height: 12rem; /* Height for smaller screens */
-    }
-
-    #contact {
-        padding: 1.5rem; /* Padding for smaller screens */
-    }
-
-    #contact h2 {
-        font-size: 1.25rem; /* Font size for smaller screens */
-    }
-
-    #contact p, #contact a {
-        font-size: 0.75rem; /* Font size for smaller screens */
-    }
-
-    footer {
-        padding: 0.75rem;
-    }
-}
-
-/* Additional Media Queries for Very Small Screens */
-@media (max-width: 600px) {
-    header {
-        padding: 0.5rem; /* Further reduced padding */
-    }
-
-    #profile-pic {
-        width: 3rem; /* Smaller size for very small screens */
-        height: 3rem;
-    }
-
-    nav ul li {
-        display: block; /* Each nav item on a new line */
-        margin-right: 0;
-    }
-
-    .slideshow-container {
-        height: 20rem; /* Smaller height for very small screens */
-        margin-bottom: -3rem; /* Adjusted negative margin */
-    }
-
-    .full-page {
-        padding: 0.75rem; /* Adjusted padding */
-        padding-top: 3rem; /* Adjusted padding top */
-        margin-top: -2rem; /* Adjusted negative margin */
-    }
-
-    .project {
-        flex-direction: column; /* Stack project items vertically */
-        align-items: center;
-    }
-
-    #contact, footer {
-        padding: 1rem; /* Increased padding */
-    }
 }
