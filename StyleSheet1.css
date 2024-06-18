@@ -326,21 +326,25 @@ footer {
 
     .slideshow-container {
         height: 12rem; /* Adjust slideshow height for smaller screens */
-        margin-bottom: -6rem; /* Reduce bottom margin for spacing */
+        margin-top: 4rem; /* Adjust margin to create space below header */
+    }
+
+    .slide-wrapper {
+        flex-wrap: wrap; /* Allow images to wrap on smaller screens */
     }
 
     .slide-wrapper img {
-        width: 5rem; /* Decrease image width */
-        margin: 0rem 0.5rem; /* Adjust margin between images */
+        width: calc(50% - 1rem); /* Two images per row with space */
+        margin: 0.5rem; /* Adjust margin between images */
     }
 
     main {
-        padding-top: 8rem; /* Adjust padding top for main content */
+        padding-top: 6rem; /* Adjust padding top for main content */
     }
 
     .full-page {
-        padding-top: 6rem; /* Adjust padding top for full-page sections */
-        margin-top: -4rem; /* Adjust negative margin */
+        padding-top: 4rem; /* Adjust padding top for full-page sections */
+        margin-top: 0; /* Remove negative margin */
     }
 
     .project {
@@ -353,8 +357,8 @@ footer {
     }
 
     #experience {
-        padding-top: 15rem; /* Adjust padding top for experience section */
-        margin-top: -10rem; /* Adjust negative margin */
+        padding-top: 10rem; /* Adjust padding top for experience section */
+        margin-top: -8rem; /* Adjust negative margin */
     }
 
     #contact {
@@ -373,3 +377,4 @@ footer {
         z-index: 1000; /* Ensure footer is above other content */
     }
 }
+
