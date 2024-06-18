@@ -270,3 +270,75 @@ footer {
     padding: 1rem;
     width: 100%; /* Ensure the footer spans the full width of the page */
 }
+
+
+/* For screens smaller than 768px (standard mobile devices) */
+@media (max-width: 767px) {
+    body {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    header {
+        padding: 0.75rem; /* Decrease header padding */
+    }
+
+    #profile-pic {
+        width: 5rem;
+        height: 5rem;
+        margin-right: 0.75rem;
+    }
+
+    nav ul li {
+        margin-right: 1rem;
+    }
+
+    .slideshow-container {
+        height: 30rem; /* Adjust slideshow height for smaller screens */
+        margin-bottom: -6rem; /* Reduce bottom margin for spacing */
+    }
+
+    .slide-wrapper img {
+        width: 14rem; /* Decrease image width */
+        margin: 0 0.5rem; /* Adjust margin between images */
+    }
+
+    main {
+        padding-top: 8rem; /* Adjust padding top for main content */
+    }
+
+    .full-page {
+        padding-top: 6rem; /* Adjust padding top for full-page sections */
+        margin-top: -4rem; /* Adjust negative margin */
+    }
+
+    .project {
+        flex-direction: column; /* Stack project details vertically */
+    }
+
+    #resume img {
+        max-width: 15rem; /* Adjust maximum width for resume image */
+        height: auto;
+    }
+
+    #experience {
+        padding-top: 15rem; /* Adjust padding top for experience section */
+        margin-top: -10rem; /* Adjust negative margin */
+    }
+
+    #contact {
+        padding: 3rem; /* Adjust padding for contact section */
+    }
+
+    /* Footer styles for mobile */
+    footer {
+        background-color: #222222;
+        color: white;
+        text-align: center;
+        padding: 0.75rem; /* Adjust footer padding */
+        width: 100%; /* Ensure the footer spans the full width of the viewport */
+        position: fixed; /* Fixed position at the bottom */
+        bottom: 0; /* Stick to the bottom */
+        z-index: 1000; /* Ensure footer is above other content */
+    }
+}
+
