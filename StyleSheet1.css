@@ -19,12 +19,12 @@ body {
     height: 100%;
     width: 100%;
     font-size: 1.375rem; /* 22px to rem */
-    background-image: linear-gradient(to right, #f5f5dc, #ffe4c4);
+    background-image: linear-gradient(to right, #f5f5dc, #ffe4c4); /* Gradient from beige to light cream */
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    color: #333;
-    font-family: 'Segoe UI', Arial, sans-serif;
+    background-attachment: fixed; /* Ensures the background is fixed during scrolling */
+    background-size: cover; /* Ensures the background covers the entire viewport */
+    color: #333; /* Sets text color to dark grey for better readability against a light background */
+    font-family: 'Segoe UI', Arial, sans-serif; /* Font style for the website */
 }
 
 /* Header styles */
@@ -248,4 +248,61 @@ footer {
     text-align: center;
     padding: 1rem;
     width: 100%;
+}
+
+/* Media query for devices with a max-width of 600px */
+@media (max-width: 600px) {
+    body {
+        font-size: 1rem; /* Smaller font size for mobile */
+    }
+
+    header {
+        flex-direction: column; /* Stack elements vertically in the header */
+        padding: 0.5rem; /* Less padding on smaller screens */
+    }
+
+    #profile-pic {
+        width: 5rem; /* Smaller profile picture on mobile */
+        height: 5rem;
+        margin-right: 0;
+    }
+
+    nav ul li {
+        display: block; /* Each nav item on a new line */
+        margin-right: 0;
+    }
+
+    .slideshow-container {
+        height: 30rem; /* Smaller slideshow on mobile */
+    }
+
+    .full-page {
+        padding: 1rem;
+        padding-top: 4rem; /* Adjusted padding for mobile */
+    }
+
+    .projects-container, .project {
+        flex-direction: column; /* Stack project items vertically */
+        align-items: center;
+    }
+
+    #contact, footer {
+        padding: 2rem; /* Increased padding for better touch interaction */
+    }
+}
+
+/* Additional responsiveness adjustments */
+@media (max-width: 960px) {
+    main, .full-page, #projects, #contact {
+        width: 95%; /* Slightly more padding on the sides */
+        padding-top: 2rem;
+    }
+
+    header, nav ul li a {
+        font-size: 0.875rem; /* Smaller text in header and navigation on tablets */
+    }
+
+    .project-description, .project-icon img {
+        padding: 0.5rem; /* Less padding around text and images */
+    }
 }
