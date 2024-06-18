@@ -135,7 +135,7 @@ main {
 /* Specific adjustment for the About Me section if needed */
 #about {
     padding-top: -3.125rem; /* Reduce this if the header is not very tall */
-    margin-top: -6.75rem; /* Adjust based on actual header height */
+    margin-top: -18.75rem; /* Adjust based on actual header height */
 }
 
 
@@ -275,7 +275,7 @@ footer {
 /* For screens smaller than 768px (standard mobile devices) */
 @media (max-width: 767px) {
     body {
-        font-size: 1rem; /* Adjust font size for smaller screens */
+        font-size: 0.75rem; /* Adjust font size for smaller screens */
     }
 
     header {
@@ -325,13 +325,13 @@ footer {
     }
 
     .slideshow-container {
-        height: 30rem; /* Adjust slideshow height for smaller screens */
+        height: 12rem; /* Adjust slideshow height for smaller screens */
         margin-bottom: -6rem; /* Reduce bottom margin for spacing */
     }
 
     .slide-wrapper img {
-        width: 14rem; /* Decrease image width */
-        margin: 0 0.5rem; /* Adjust margin between images */
+        width: 5rem; /* Decrease image width */
+        margin: 0rem 0.5rem; /* Adjust margin between images */
     }
 
     main {
