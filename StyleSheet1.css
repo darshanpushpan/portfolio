@@ -135,7 +135,7 @@ main {
 /* Specific adjustment for the About Me section if needed */
 #about {
     padding-top: -3.125rem; /* Reduce this if the header is not very tall */
-    margin-top: -18.75rem; /* Adjust based on actual header height */
+    margin-top: -6.75rem; /* Adjust based on actual header height */
 }
 
 
