@@ -16,21 +16,18 @@ html, body {
 body {
     margin: 0;
     padding: 0;
-    height: 100%;
-    width: 100%;
-    font-size: 1.375rem; /* 22px to rem */
-    background-image: linear-gradient(to right, #f5f5dc, #ffe4c4); /* Gradient from beige to light cream */
+    font-size: 1rem; /* Adjust base font size */
+    background-image: linear-gradient(to right, #f5f5dc, #ffe4c4);
     background-repeat: no-repeat;
-    background-attachment: fixed; /* Ensures the background is fixed during scrolling */
-    background-size: cover; /* Ensures the background covers the entire viewport */
-    color: #333; /* Sets text color to dark grey for better readability against a light background */
-    font-family: 'Segoe UI', Arial, sans-serif; /* Font style for the website */
+    background-attachment: fixed;
+    background-size: cover;
+    color: #333;
+    font-family: 'Segoe UI', Arial, sans-serif;
 }
 
-/* Header styles */
 header {
     color: white;
-    padding: 1.25rem; /* 20px to rem */
+    padding: 1rem; /* Adjusted padding */
     text-align: left;
     position: fixed;
     top: 0;
@@ -42,14 +39,13 @@ header {
 }
 
 #profile-pic {
-    width: 7.8125rem; /* 125px to rem */
-    height: 7.8125rem; /* 125px to rem */
+    width: 5rem; /* Adjusted size for smaller screens */
+    height: 5rem;
     border-radius: 50%;
     object-fit: contain;
-    margin-right: 1.25rem; /* 20px to rem */
+    margin-right: 1rem; /* Adjusted margin */
 }
 
-/* Navigation styles */
 nav {
     margin-left: auto;
 }
@@ -62,14 +58,14 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 1.25rem; /* 20px to rem */
+    display: inline-block; /* Adjusted display */
+    margin-right: 1rem; /* Adjusted margin */
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 0.625rem; /* 10px to rem */
+    padding: 0.5rem; /* Adjusted padding */
     transition: color 0.3s ease, background-color 0.3s ease;
 }
 
@@ -80,13 +76,13 @@ nav ul li a:hover {
 
 .slideshow-container {
     width: 100%;
-    height: 50rem; /* 800px to rem */
+    height: 30rem; /* Adjusted height for smaller screens */
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    margin-bottom: -9.375rem; /* -150px to rem */
+    margin-bottom: -6rem; /* Adjusted negative margin */
 }
 
 .slide-wrapper {
@@ -97,60 +93,47 @@ nav ul li a:hover {
 }
 
 .slide-wrapper img {
-    width: 17.1875rem; /* 275px to rem */
+    width: 15rem; /* Adjusted size for smaller screens */
     height: auto;
     object-fit: cover;
-    margin: 0 0.9375rem; /* 15px to rem */
+    margin: 0 0.5rem; /* Adjusted margin */
 }
 
-/* Main content styles */
 main {
-    padding-top: 11.25rem; /* 180px to rem */
+    padding-top: 8rem; /* Adjusted padding */
     width: 90%;
     margin: auto;
 }
 
 .full-page {
-    min-height: 75vh;
+    min-height: 50vh; /* Adjusted minimum height */
     width: 100%;
-    padding: 2.5rem; /* 40px to rem */
-    padding-top: 8.75rem; /* 140px to rem */
-    margin-top: -6.25rem; /* -100px to rem */
+    padding: 1.5rem; /* Adjusted padding */
+    padding-top: 6rem; /* Adjusted padding top */
+    margin-top: -4rem; /* Adjusted negative margin */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-#about {
-    padding-top: -3.125rem; /* -50px to rem */
-    margin-top: -18.75rem; /* -300px to rem */
-}
-
 .full-page h2 {
     text-align: center;
     width: 100%;
-    margin-bottom: 1.875rem; /* 30px to rem */
-    font-size: 1.75rem; /* 28px to rem */
-}
-
-#projects {
-    margin-top: -8.75rem; /* -140px to rem */
-    padding-top: 13.75rem; /* 220px to rem */
+    margin-bottom: 1rem; /* Adjusted margin */
+    font-size: 1.5rem; /* Adjusted font size */
 }
 
 .projects-container {
     text-align: center;
     width: 100%;
-    padding: 1.25rem; /* 20px to rem */
-    background-color: none;
-    color: #000;
+    padding: 1rem; /* Adjusted padding */
 }
 
 .project {
-    margin: 1.25rem auto; /* 20px to rem */
-    padding: 1.25rem; /* 20px to rem */
-    border: 0.0625rem solid #ccc; /* 1px to rem */
+    margin: 1rem auto; /* Adjusted margin */
+    padding: 1rem; /* Adjusted padding */
+    border: 1px solid #ccc; /* Adjusted border */
     width: 80%;
     display: flex;
     align-items: center;
@@ -158,26 +141,21 @@ main {
 }
 
 .project-icon {
-    flex: 0 0 5.625rem; /* 90px to rem */
-    margin-right: 1.25rem; /* 20px to rem */
+    flex: 0 0 5rem; /* Adjusted size for smaller screens */
+    margin-right: 1rem; /* Adjusted margin */
 }
 
 .project-icon img {
-    width: 5.625rem; /* 90px to rem */
-    height: 5.625rem; /* 90px to rem */
+    width: 5rem; /* Adjusted size for smaller screens */
+    height: 5rem; /* Adjusted size for smaller screens */
     object-fit: contain;
-}
-
-.project-description {
-    flex: 1;
-    text-align: left;
 }
 
 .source-code {
     display: inline-block;
-    padding: 0.625rem 1.25rem; /* 10px 20px to rem */
+    padding: 0.5rem 1rem; /* Adjusted padding */
     background-color: #666;
-    border: 0.0625rem solid #fff; /* 1px to rem */
+    border: 1px solid #fff; /* Adjusted border */
     color: #fff;
     text-decoration: none;
     transition: background-color 0.5s, color 0.5s;
@@ -190,21 +168,16 @@ main {
 }
 
 #resume img {
-    border: 0.0625rem solid #ccc; /* 1px to rem */
+    border: 1px solid #ccc; /* Adjusted border */
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
     width: 100%;
-    max-width: 18.75rem; /* 300px to rem */
-    height: 18.75rem; /* 300px to rem */
+    max-width: 15rem; /* Adjusted max-width */
+    height: 15rem; /* Adjusted height */
 }
 
 #resume img:hover {
     transform: scale(1.05);
-}
-
-#experience {
-    padding-top: 18.75rem; /* 300px to rem */
-    margin-top: -13.75rem; /* -220px to rem */
 }
 
 #contact {
@@ -214,27 +187,26 @@ main {
     justify-content: center;
     text-align: center;
     width: 100%;
-    padding: 6.25rem; /* 100px to rem */
-    min-height: 75vh;
+    padding: 2rem; /* Adjusted padding */
+    min-height: 50vh; /* Adjusted minimum height */
 }
 
 #contact h2 {
-    margin-bottom: 1.25rem; /* 20px to rem */
-    font-size: 1.75rem; /* 28px to rem */
+    margin-bottom: 1rem; /* Adjusted margin */
+    font-size: 1.5rem; /* Adjusted font size */
 }
 
 #contact p, #contact a {
-    font-size: 1.125rem; /* 18px to rem */
-    margin-bottom: 0.625rem; /* 10px to rem */
+    font-size: 0.875rem; /* Adjusted font size */
+    margin-bottom: 0.5rem; /* Adjusted margin */
     color: #666;
 }
 
 #contact a {
     color: #0056b3;
     text-decoration: none;
-    padding: 0.5rem 1rem; /* 8px 16px to rem */
-    background-color: none;
-    border-radius: 0.3125rem; /* 5px to rem */
+    padding: 0.5rem 1rem; /* Adjusted padding */
+    border-radius: 0.3125rem; /* Adjusted border radius */
     transition: background-color 0.3s ease;
 }
 
@@ -250,20 +222,69 @@ footer {
     width: 100%;
 }
 
-/* Media query for devices with a max-width of 600px */
-@media (max-width: 600px) {
-    body {
-        font-size: 1rem; /* Smaller font size for mobile */
+/* Media Queries */
+@media (max-width: 960px) {
+    header {
+        padding: 0.75rem; /* Adjusted padding */
     }
 
+    nav ul li {
+        margin-right: 0.75rem; /* Adjusted margin */
+    }
+
+    .slideshow-container {
+        height: 25rem; /* Adjusted height */
+        margin-bottom: -4rem; /* Adjusted negative margin */
+    }
+
+    .full-page {
+        padding: 1rem; /* Adjusted padding */
+        padding-top: 4rem; /* Adjusted padding top */
+        margin-top: -3rem; /* Adjusted negative margin */
+    }
+
+    .project-icon {
+        flex: 0 0 4rem; /* Adjusted size */
+        margin-right: 0.75rem; /* Adjusted margin */
+    }
+
+    .project-icon img {
+        width: 4rem; /* Adjusted size */
+        height: 4rem; /* Adjusted size */
+    }
+
+    #resume img {
+        max-width: 12rem; /* Adjusted max-width */
+        height: 12rem; /* Adjusted height */
+    }
+
+    #contact {
+        padding: 1.5rem; /* Adjusted padding */
+    }
+
+    #contact h2 {
+        font-size: 1.25rem; /* Adjusted font size */
+    }
+
+    #contact p, #contact a {
+        font-size: 0.75rem; /* Adjusted font size */
+    }
+
+    footer {
+        padding: 0.75rem;
+    }
+}
+
+/* Additional Media Queries for smaller screens */
+@media (max-width: 600px) {
     header {
-        flex-direction: column; /* Stack elements vertically in the header */
-        padding: 0.5rem; /* Less padding on smaller screens */
+        flex-direction: column;
+        padding: 0.5rem; /* Further reduced padding */
     }
 
     #profile-pic {
-        width: 5rem; /* Smaller profile picture on mobile */
-        height: 5rem;
+        width: 4rem; /* Smaller profile picture */
+        height: 4rem;
         margin-right: 0;
     }
 
@@ -273,36 +294,22 @@ footer {
     }
 
     .slideshow-container {
-        height: 30rem; /* Smaller slideshow on mobile */
+        height: 20rem; /* Smaller slideshow */
+        margin-bottom: -3rem; /* Adjusted negative margin */
     }
 
     .full-page {
-        padding: 1rem;
-        padding-top: 4rem; /* Adjusted padding for mobile */
+        padding: 0.75rem; /* Adjusted padding */
+        padding-top: 3rem; /* Adjusted padding top */
+        margin-top: -2rem; /* Adjusted negative margin */
     }
 
-    .projects-container, .project {
+    .project {
         flex-direction: column; /* Stack project items vertically */
         align-items: center;
     }
 
     #contact, footer {
-        padding: 2rem; /* Increased padding for better touch interaction */
-    }
-}
-
-/* Additional responsiveness adjustments */
-@media (max-width: 960px) {
-    main, .full-page, #projects, #contact {
-        width: 95%; /* Slightly more padding on the sides */
-        padding-top: 2rem;
-    }
-
-    header, nav ul li a {
-        font-size: 0.875rem; /* Smaller text in header and navigation on tablets */
-    }
-
-    .project-description, .project-icon img {
-        padding: 0.5rem; /* Less padding around text and images */
+        padding: 1rem; /* Increased padding */
     }
 }
