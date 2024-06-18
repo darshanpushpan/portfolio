@@ -1,4 +1,4 @@
-﻿/* Basic Reset */
+/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
@@ -18,21 +18,19 @@ body {
     padding: 0;
     height: 100%;
     width: 100%;
-    font-size: 22px;
-    background-image: linear-gradient(to right, #f5f5dc, #ffe4c4); /* Gradient from beige to light cream */
+    font-size: 1.375rem; /* 22px to rem */
+    background-image: linear-gradient(to right, #f5f5dc, #ffe4c4);
     background-repeat: no-repeat;
-    background-attachment: fixed; /* Ensures the background is fixed during scrolling */
-    background-size: cover; /* Ensures the background covers the entire viewport */
-    color: #333; /* Sets text color to dark grey for better readability against a light background */
-    font-family: 'Segoe UI', Arial, sans-serif; /* Font style for the website */
+    background-attachment: fixed;
+    background-size: cover;
+    color: #333;
+    font-family: 'Segoe UI', Arial, sans-serif;
 }
-
-
 
 /* Header styles */
 header {
     color: white;
-    padding: 20px;
+    padding: 1.25rem; /* 20px to rem */
     text-align: left;
     position: fixed;
     top: 0;
@@ -44,11 +42,11 @@ header {
 }
 
 #profile-pic {
-    width: 125px;
-    height: 125px;
+    width: 7.8125rem; /* 125px to rem */
+    height: 7.8125rem; /* 125px to rem */
     border-radius: 50%;
     object-fit: contain;
-    margin-right: 20px;
+    margin-right: 1.25rem; /* 20px to rem */
 }
 
 /* Navigation styles */
@@ -56,217 +54,198 @@ nav {
     margin-left: auto;
 }
 
-    nav ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        text-align: center;
-    }
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
 
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
+nav ul li {
+    display: inline;
+    margin-right: 1.25rem; /* 20px to rem */
+}
 
-            nav ul li a {
-                color: white;
-                text-decoration: none;
-                padding: 10px;
-                transition: color 0.3s ease, background-color 0.3s ease;
-            }
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.625rem; /* 10px to rem */
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
 
-                nav ul li a:hover {
-                    color: #00bfff; /* Light blue on hover */
-                    background-color: rgba(255, 255, 255, 0.2); /* Slight background on hover */
-                }
-
+nav ul li a:hover {
+    color: #00bfff;
+    background-color: rgba(255, 255, 255, 0.2);
+}
 
 .slideshow-container {
-    width: 100%; /* Full viewport width */
-    height: 800px; /* Fixed height */
+    width: 100%;
+    height: 50rem; /* 800px to rem */
     position: relative;
     display: flex;
-    justify-content: center; /* Center images horizontally */
-    align-items: center; /* Center images vertically */
-    overflow: hidden; /* Hide anything outside this container */
-    margin-bottom: -150px; /* Reduced bottom margin to decrease space to the next section */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: -9.375rem; /* -150px to rem */
 }
 
 .slide-wrapper {
-    display: flex; /* Flexbox layout for images */
-    width: 100%; /* Full width of the container */
-    justify-content: space-evenly; /* Evenly space images */
-    align-items: center; /* Vertically align images in the center */
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-    .slide-wrapper img {
-        width: 275px; /* Fixed width for each image */
-        height: auto; /* Auto height to maintain aspect ratio */
-        object-fit: cover; /* Cover fit to avoid distortion */
-        margin: 0 15px; /* Space between images */
-    }
-
-
-
-
-
+.slide-wrapper img {
+    width: 17.1875rem; /* 275px to rem */
+    height: auto;
+    object-fit: cover;
+    margin: 0 0.9375rem; /* 15px to rem */
+}
 
 /* Main content styles */
 main {
-    padding-top: 180px; /* Adjusting for the header height */
-    width: 90%; /* Control the width of the main content area to not span the full page */
-    margin: auto; /* Center the main content horizontally */
+    padding-top: 11.25rem; /* 180px to rem */
+    width: 90%;
+    margin: auto;
 }
 
-/* Ensure that all full-page sections have enough padding at the top 
-   to account for the fixed header's height and a negative margin to align them properly. */
 .full-page {
     min-height: 75vh;
     width: 100%;
-    padding: 40px; /* Consistent padding for better spacing */
-    padding-top: 140px; /* Reduced padding-top as compared to previous */
-    margin-top: -100px; /* Negative margin adjusted to pull the section upwards */
+    padding: 2.5rem; /* 40px to rem */
+    padding-top: 8.75rem; /* 140px to rem */
+    margin-top: -6.25rem; /* -100px to rem */
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center alignment for better aesthetics */
+    align-items: center;
     justify-content: center;
 }
 
-/* Specific adjustment for the About Me section if needed */
 #about {
-    padding-top: -50px; /* Reduce this if the header is not very tall */
-    margin-top: -300px; /* Adjust based on actual header height */
+    padding-top: -3.125rem; /* -50px to rem */
+    margin-top: -18.75rem; /* -300px to rem */
 }
 
+.full-page h2 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1.875rem; /* 30px to rem */
+    font-size: 1.75rem; /* 28px to rem */
+}
 
-    .full-page h2 {
-        text-align: center; /* Center align all h2 headings */
-        width: 100%; /* Ensure the headings are full width */
-        margin-bottom: 30px; /* Adds space below the heading */
-        font-size: 28px; /* Larger font size for section titles */
-    }
-
-/* Specific adjustment for the Projects section */
 #projects {
-    margin-top: -140px; /* Adjust this value if the header is larger */
-    padding-top: 220px; /* Increased padding at the top to accommodate fixed header */
+    margin-top: -8.75rem; /* -140px to rem */
+    padding-top: 13.75rem; /* 220px to rem */
 }
 
 .projects-container {
-    text-align: center; /* Center-aligns the headers */
+    text-align: center;
     width: 100%;
-    padding: 20px;
-    background-color: none; /* No specific background color for the section */
-    color: #000; /* Sets text color */
+    padding: 1.25rem; /* 20px to rem */
+    background-color: none;
+    color: #000;
 }
 
 .project {
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ccc; /* Subtle border */
-    width: 80%; /* Adjust width as necessary */
+    margin: 1.25rem auto; /* 20px to rem */
+    padding: 1.25rem; /* 20px to rem */
+    border: 0.0625rem solid #ccc; /* 1px to rem */
+    width: 80%;
     display: flex;
-    align-items: center; /* Vertically centers the items within each project */
-    justify-content: space-around; /* Distributes space around items */
+    align-items: center;
+    justify-content: space-around;
 }
 
 .project-icon {
-    flex: 0 0 90px; /* Reduced flex basis to 80px */
-    margin-right: 20px; /* Maintains space between the icon and the description */
+    flex: 0 0 5.625rem; /* 90px to rem */
+    margin-right: 1.25rem; /* 20px to rem */
 }
 
-    .project-icon img {
-        width: 90px; /* Explicitly sets the width of the image to 80px */
-        height: 90px; /* Explicitly sets the height of the image to 80px */
-        object-fit: contain; /* Ensures the image scales correctly within the dimensions */
-    }
+.project-icon img {
+    width: 5.625rem; /* 90px to rem */
+    height: 5.625rem; /* 90px to rem */
+    object-fit: contain;
+}
 
 .project-description {
-    flex: 1; /* Allows the description to fill the remaining space */
-    text-align: left; /* Aligns the text to the left */
+    flex: 1;
+    text-align: left;
 }
 
 .source-code {
     display: inline-block;
-    padding: 10px 20px;
-    background-color:#666; /* No background color */
-    border: 1px solid #fff; /* White border */
+    padding: 0.625rem 1.25rem; /* 10px 20px to rem */
+    background-color: #666;
+    border: 0.0625rem solid #fff; /* 1px to rem */
     color: #fff;
     text-decoration: none;
     transition: background-color 0.5s, color 0.5s;
 }
 
-    .source-code:hover {
-        background-color: #fff; /* White background on hover */
-        color: #000; /* Text color changes on hover */
-        transform: scale(1.05); /* Slightly enlarges the image on hover */
-    }
+.source-code:hover {
+    background-color: #fff;
+    color: #000;
+    transform: scale(1.05);
+}
 
 #resume img {
-    border: 1px solid #ccc; /* Adds a subtle border around the image */
-    transition: transform 0.3s ease-in-out; /* Smooth transform effect on hover */
-    cursor: pointer; /* Changes the cursor to indicate it's clickable */
-    width: 100%; /* Ensures the image is responsive and fits the container */
-    max-width: 300px; /* Reduces the maximum width to 400px */
-    height: 300px; /* Maintains the aspect ratio of the image */
+    border: 0.0625rem solid #ccc; /* 1px to rem */
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    width: 100%;
+    max-width: 18.75rem; /* 300px to rem */
+    height: 18.75rem; /* 300px to rem */
 }
 
-    #resume img:hover {
-        transform: scale(1.05); /* Slightly enlarges the image on hover */
-    }
+#resume img:hover {
+    transform: scale(1.05);
+}
 
-
-
-/* Additional specific adjustments for the 'experience' section if needed */
 #experience {
-    padding-top: 300px; /* Increase padding if the header is larger or for better visibility */
-    margin-top: -220px; /* Corresponding negative margin */
+    padding-top: 18.75rem; /* 300px to rem */
+    margin-top: -13.75rem; /* -220px to rem */
 }
 
-
-/* Contact Section Styles */
 #contact {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centers content horizontally */
-    justify-content: center; /* Centers content vertically if there is enough space */
-    text-align: center; /* Ensures text and inline elements are centered */
-    width: 100%; /* Takes full width to allow for centering within the parent */
-    padding: 100px; /* Optional: Adjust padding as needed for spacing */
-    min-height: 75vh; /* Ensures the section takes up sufficient vertical space */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 6.25rem; /* 100px to rem */
+    min-height: 75vh;
 }
 
-    #contact h2 {
-        margin-bottom: 20px; /* Space below the section heading */
-        font-size: 28px; /* Larger font size for visibility */
-    }
+#contact h2 {
+    margin-bottom: 1.25rem; /* 20px to rem */
+    font-size: 1.75rem; /* 28px to rem */
+}
 
-    #contact p, #contact a {
-        font-size: 18px; /* Ensures legibility */
-        margin-bottom: 10px; /* Spacing between contact elements */
-        color: #666; /* Styling for text color */
-    }
+#contact p, #contact a {
+    font-size: 1.125rem; /* 18px to rem */
+    margin-bottom: 0.625rem; /* 10px to rem */
+    color: #666;
+}
 
-    #contact a {
-        color: #0056b3; /* Style for links to make them stand out */
-        text-decoration: none; /* Optional: removes underline from links */
-        padding: 8px 16px; /* Padding for better touch interaction */
-        background-color: none; /* Background color for links for visibility */
-        border-radius: 5px; /* Rounded corners for aesthetic appeal */
-        transition: background-color 0.3s ease; /* Smooth transition for hover effect */
-    }
+#contact a {
+    color: #0056b3;
+    text-decoration: none;
+    padding: 0.5rem 1rem; /* 8px 16px to rem */
+    background-color: none;
+    border-radius: 0.3125rem; /* 5px to rem */
+    transition: background-color 0.3s ease;
+}
 
-        #contact a:hover {
-            background-color: #e2e2e2; /* Slightly darker on hover for interaction feedback */
-        }
+#contact a:hover {
+    background-color: #e2e2e2;
+}
 
-
-
-/* Footer styles */
 footer {
     background-color: #222222;
     color: white;
     text-align: center;
     padding: 1rem;
-    width: 100%; /* Ensure the footer spans the full width of the page */
+    width: 100%;
 }
