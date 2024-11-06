@@ -8,15 +8,13 @@
     <link rel="stylesheet" href="StyleSheet1.css">
 </head>
 <body>
-    <header style="background-image: url('file:///C:/Users/darsa/Downloads/DALL.webp'); background-size: cover; background-position: center; background-repeat: no-repeat;">
-        <img src="C:/Users/darsa/Downloads/Darshan Photo.jpg" alt="Darshan Pushpangadhan" id="profile-pic">
+    <header style="background-image: url('Icons/DALL.webp'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <img src="Icons/Darshan Photo.jpg" alt="Darshan Pushpangadhan" id="profile-pic">
         <div>
             <h1>Darshan Pushpangadhan</h1>
             <p>Aspiring IT Intelligence Specialist & Cybersecurity Enthusiast</p>
         </div>
-
-        <!-- Desktop Navigation -->
-        <nav id="desktop-nav">
+        <nav>
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#resume">Resume</a></li>
@@ -25,40 +23,7 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-
-        <!-- Mobile Menu Toggle (Hamburger Icon) -->
-        <div id="mobile-menu-toggle" onclick="toggleMenu()">☰</div>
-
-        <!-- Mobile Navigation -->
-        <nav id="mobile-nav" class="hidden">
-            <ul>
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#resume" onclick="toggleMenu()">Resume</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </ul>
-        </nav>
     </header>
-
-    <script>
-        function toggleMenu() {
-            const mobileNav = document.getElementById('mobile-nav');
-            mobileNav.classList.toggle('show');
-
-            // Optional: Show an overlay when the menu is open
-            if (mobileNav.classList.contains('show')) {
-                document.body.insertAdjacentHTML(
-                    'beforeend',
-                    '<div class="overlay" onclick="toggleMenu()"></div>'
-                );
-            } else {
-                const overlay = document.querySelector('.overlay');
-                if (overlay) overlay.remove();
-            }
-        }
-    </script>
-
 
     <main>
         <section id="about" class="full-page">
@@ -108,6 +73,7 @@
                 </div>
                 <a href="https://github.com/link_to_project" class="button source-code">Source Code</a>
             </div>
+            
         </section>
 
         <section id="experience" class="full-page">
